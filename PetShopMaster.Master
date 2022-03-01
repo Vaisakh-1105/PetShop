@@ -1,0 +1,127 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="PetShopMaster.Master.cs" Inherits="PetShop.testMaster" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title>PetShop</title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <link rel="icon" href="logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    
+
+    <!-- css link -->
+    <link rel="stylesheet" href="css/style.css">
+    
+    <%--jQuery cdn--%>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body onload="slider()">
+    <form id="form1" runat="server">
+        <div>
+            <!-- header section starts -->
+            <header>
+                <style>
+                    .loginlabel{                          
+                          color: #fff;
+                           font-size:15px ;                         
+                    }
+                </style>
+                
+     
+                <a href="" class="logo"><span>P</span>et<span>S</span>hop
+                </a>               
+                <nav class="navbar">
+                    <a href="PetShopHome.aspx">Home</a>
+                    <div class="dropdown">
+                        <a class="dropbtn">Categories</a>
+                        <div class="dropdown-content">
+                            <a href="Dogss.aspx">Dog</a>
+                            <a href="Cats.aspx">Cat</a>
+                            <a href="LoveBirdss.aspx">Love Birds</a>
+                        </div>
+                    </div>
+                    <div class="dropdown">
+                        <a class="dropbtn">Services</a>
+                        <div class="dropdown-content">
+                            <a href="BookNow.aspx">Grooming</a>
+                            <a href="Training.aspx">Training</a>
+                            <a href="Vaccation.aspx">Vaccation</a>
+                            <a href="Vaccination.aspx">Vaccination</a>
+                        </div>
+                    </div>
+                    <div class="dropdown">
+                        <a class="dropbtn">Shop</a>
+                        <div class="dropdown-content">
+                            <a href="FoodItems.aspx">Food Items</a>
+                            <a href="Medicine.aspx">Medicine</a>
+                            <a href="Accessories.aspx">Accessories</a>
+                        </div>
+                    </div>                
+                     <a href="AboutUs.aspx">About Us</a>
+                     <a href="LoginReg.aspx">Logout</a>
+                     <a href="Cartdetails.aspx"><a href="Cartdetails.aspx"><i style="font-size:34px; color: #ffa500;" class="fa">&#xf07a;</i></a></a>
+
+                    <br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                      &nbsp;<asp:Label ID="UserName" runat="server" CssClass="loginlabel" ></asp:Label>
+                </nav>
+            </header>
+            <!-- header section ends -->
+
+            <asp:ContentPlaceHolder ID="petShopHeaderFooter" runat="server">
+                <%--write your other pages content--%>
+            </asp:ContentPlaceHolder>
+
+            <br />
+            <!-- footer section starts -->
+            <section id="contactUs">
+                <footer>
+                    <div class="footer-distributed">
+                        <div class="text">
+                        <h1 style="color:aliceblue;">Contact Us</h1>
+                    </div>
+                        <div class="footer-left">
+                            <div class="social-media">
+                                <a href=""><i style="color: #fff;" class="fab fa-facebook"></i></a>
+                                <a href=""><i style="color: #fff;" class="fab fa-instagram"></i></a>
+                                <a href="https://www.youtube.com/"><i style="color: #fff;" class="fab fa-youtube"
+                                    title="youtube"></i></a>
+                            </div>
+                        </div>
+
+                        <div class="footer-center">
+                            <div>
+                                <i class="fa fa-map-marker"></i>
+                                <p>
+                                    Cetacean
+                                    <br>
+                                    Kochi, India
+                                </p>
+                            </div>
+
+                            <div>
+                                <i class="fa fa-phone"></i>
+                                <p>+91-0000000000</p>
+                            </div>
+
+                            <div>
+                                <i class="fa fa-envelope"></i>
+                                <p><a href="mailto:support@company.com" id="footer-email">june21@gmail.com</a></p>
+                            </div>
+                            <br>
+                            <br>
+                        </div>
+
+                        <div class="footer-right">
+                            <p>© 2021 Created By Team June-21 </p>
+                        </div>
+                    </div>
+                </footer>
+            </section>
+            <!-- footer section starts -->
+        </div>
+    </form>
+    <script src="Scripts/js/script.js"></script>
+</body>
+</html>

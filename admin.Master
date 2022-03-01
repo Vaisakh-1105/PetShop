@@ -1,0 +1,88 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="admin.master.cs" Inherits="PetShop.admin" %>
+
+<html>
+<head runat="server">
+    <title>PetShop</title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <link rel="icon" href="logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="css/admin.css" />
+
+    <!-- css link -->
+    <link rel="stylesheet" href="css/style.css">
+    
+    <%--jQuery cdn--%>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body onload="slider()">
+    <form id="form1" runat="server">
+        <div>
+            <!-- header section starts -->
+            <header>
+                <a  class="logo"><span>A</span>d<span>M</span>in
+                </a>
+                <nav class="navbar">
+                    <a href="LoginReg.aspx">Logout</a>
+                </nav>
+            </header>
+            
+            <br />
+            <!-- header section ends -->
+
+            <asp:ContentPlaceHolder ID="adminHeaderFooter" runat="server">
+                <%--write your other pages content--%>
+            </asp:ContentPlaceHolder>
+
+            <br />
+            <!-- footer section starts -->
+            <section id="contactUs">
+                <footer>
+                    <div class="footer-distributed">
+                        <div class="text">
+                        <h1 style="color:aliceblue;">Contact Us</h1>
+                    </div>
+                        <div class="footer-left">
+                            <div class="social-media">
+                                <a href=""><i style="color: #fff;" class="fab fa-facebook"></i></a>
+                                <a href=""><i style="color: #fff;" class="fab fa-instagram"></i></a>
+                                <a href="https://www.youtube.com/"><i style="color: #fff;" class="fab fa-youtube"
+                                    title="youtube"></i></a>
+                            </div>
+                        </div>
+
+                        <div class="footer-center">
+                            <div>
+                                <i class="fa fa-map-marker"></i>
+                                <p>
+                                    Cetacean
+                                    <br>
+                                    Kochi, India
+                                </p>
+                            </div>
+
+                            <div>
+                                <i class="fa fa-phone"></i>
+                                <p>+91-0000000000</p>
+                            </div>
+
+                            <div>
+                                <i class="fa fa-envelope"></i>
+                                <p><a href="mailto:support@company.com" id="footer-email">june21@gmail.com</a></p>
+                            </div>
+                            <br>
+                            <br>
+                        </div>
+
+                        <div class="footer-right">
+                            <p>© 2021 Created By Team June-21 </p>
+                        </div>
+                    </div>
+                </footer>
+            </section>
+            <!-- footer section starts -->
+        </div>
+    </form>
+    <script src="Scripts/js/script.js"></script>
+</body>
+</html>
